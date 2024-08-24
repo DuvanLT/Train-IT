@@ -4,7 +4,7 @@ import { Entity,Column, PrimaryGeneratedColumn } from "typeorm";
 //en este caso se llaman entidades, usamos typecript para decirle que dato deberia usar en caso que no encuentre el tipo
 @Entity()
 export class Table{
-    @PrimaryGeneratedColumn()
+    @PrimaryGeneratedColumn() //Indica cual sera la llave primaria 
     id: number;
 
     @Column()
