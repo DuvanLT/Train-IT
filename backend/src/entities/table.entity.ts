@@ -4,16 +4,16 @@ import { Entity,Column, PrimaryGeneratedColumn } from "typeorm";
 //en este caso se llaman entidades, usamos typecript para decirle que dato deberia usar en caso que no encuentre el tipo
 @Entity()
 export class Table{
+    @Column()
+    name: string;
+     
     @PrimaryGeneratedColumn() //Indica cual sera la llave primaria 
     id: number;
 
-    @Column()
-    name: string
-
     @Column('float')
-    price: number
+    price: number;
 
     @Column()
-    description: string
+    description: string;
     //estas son las columnas dentro de nuestra base de datos en PostgreSQL 
 }
